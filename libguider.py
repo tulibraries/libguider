@@ -11,8 +11,8 @@ import urllib
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--site_id", help="Libguides Site ID")
-parser.add_argument("--api_key", help="Libguides API key")
+parser.add_argument("--site_id", help="Libguides Site ID", required=True)
+parser.add_argument("--api_key", help="Libguides API key", required=True)
 parser.add_argument("--guide_status", help="Libguides statuses to include. ex. 1 or 1,2", 
   default="1")
 args = parser.parse_args()
